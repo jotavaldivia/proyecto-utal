@@ -1,0 +1,23 @@
+.directory-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.directory-filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.groups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .directory-filters {
+    flex-direction: column;
+  }
+}

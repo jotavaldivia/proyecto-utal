@@ -1,0 +1,97 @@
+.card-container {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.card-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  /*  display: flex; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  background: var(--secondary-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.description {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  flex-grow: 1;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.details span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.icon-location {
+  color: var(--danger-color);
+}
+
+.icon-star {
+  color: #f59e0b;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.action-btn {
+  background: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.active-fav {
+  color: var(--danger-color);
+  border-color: var(--danger-color);
+  background: #fff5f5;
+}
+
+.contact-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.contact-btn:hover {
+  background: #004494;
+}

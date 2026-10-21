@@ -1,0 +1,93 @@
+.group-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.group-card.is-member {
+    border-color: var(--success-color);
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.2);
+}
+
+.group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge-area {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.group-info,
+.group-req {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.group-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.group-info span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.group-info .icon-location {
+    color: var(--danger-color);
+}
+
+.group-info .icon-clock {
+    color: var(--primary-color);
+}
+
+.group-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.cupos {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.btn-enroll {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-enroll:disabled {
+    background: var(--border-color);
+    cursor: not-allowed;
+}
+
+.btn-member {
+    background: var(--success-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}

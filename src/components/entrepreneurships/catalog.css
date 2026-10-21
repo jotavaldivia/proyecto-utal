@@ -1,0 +1,60 @@
+.catalog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.catalog-filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.filter-btn {
+  padding: 0.8rem 1.5rem;
+  background: white;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-btn.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-light);
+  background: white;
+  border-radius: 8px;
+  border: 1px dashed var(--border-color);
+}
+
+@media (max-width: 600px) {
+  .catalog-filters {
+    flex-direction: column;
+  }
+  .filter-btn {
+    width: 100%;
+  }
+}
